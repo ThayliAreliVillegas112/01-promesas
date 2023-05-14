@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Lavadora</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 60px;">   
+                <div class="col-12">
+                    <span class="badge bg-secondary" id="powerBadge">.</span>
+                </div>
+                <div class="col-12">.</div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-danger" onclick="power()">Power</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 20px;">
+                <div class="col-12"><span class="badge bg-secondary" id="s5">5</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="s4">4</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="s3">3</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="s2">2</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="s1">1</span></div>
+                <div class="col-12"><button type="button" class="btn btn-primary" onclick="nivelAgua()">Nivel Agua</button></div>
+            </div>
+        </div>        
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 20px;">
+                <div class="col-12"><span class="badge bg-secondary" id="pesado">pesado</span></div>
+                <div class="col-12">.</div>
+                <div class="col-12"><span class="badge bg-secondary" id="medio">medio</span></div>
+                <div class="col-12">.</div>
+                <div class="col-12"><span class="badge bg-secondary" id="normal">normal</span></div>
+                <div class="col-12"><button type="button" class="btn btn-primary"  onclick="nivelLavado()">Nivel Lavado</button></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 20px;">
+                <div class="col-12"><span class="badge bg-secondary" id="t5">30</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="t4">25</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="t3">20</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="t2">15</span></div>
+                <div class="col-12"><span class="badge bg-secondary" id="t1">10</span></div>
+                <div class="col-12"><button type="button" class="btn btn-primary"  onclick="tiempoLavado()">Tiempo lavado</button></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 20px;">
+                <div class="col-12"><span class="badge bg-secondary" id="e3">3</span></div>
+                <div class="col-12">.</div>
+                <div class="col-12"><span class="badge bg-secondary" id="e2">2</span></div>
+                <div class="col-12">.</div>
+                <div class="col-12"><span class="badge bg-secondary" id="e1">1</span></div>
+                <div class="col-12"><button type="button" class="btn btn-primary"  onclick="enjuague()">Enjuague</button></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row text-center" style="margin-top: 60px;">
+                <div class="col-12"><span class="badge bg-secondary" id="lavar">.</span></div>
+                <div class="col-12">.</div>
+                <div class="col-12"><button type="button" class="btn btn-success"  onclick="lavar()">Lavar</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="lavadora.js"></script>
+</body>
+</html>
