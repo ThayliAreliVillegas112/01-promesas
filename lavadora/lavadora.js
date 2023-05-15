@@ -23,7 +23,7 @@ function power(){
         lavadora.nivelAgua=0;
         lavadora.nivelLavado=0;
         lavadora.tiempoLavado = 0;
-        lavadora.enjuague=3;
+        lavadora.enjuague=0;
         lavadora.lavar=false;
     }else{
         lavadora.power= true;
